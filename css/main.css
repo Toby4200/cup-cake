@@ -40,13 +40,15 @@ html, body {
 }
 
 .intro > div .intro__order {
-  margin-bottom: 70px;
+  margin-top: -75px;
+  margin-bottom: 60px;
 }
 
 .intro > div .intro__order span:nth-child(1) {
   display: block;
   font-size: 14px;
   color: #f4f4f4;
+  line-height: 14px;
   text-align: center;
 }
 
@@ -59,6 +61,7 @@ html, body {
 .intro > div .intro__logo {
   display: inline-block;
   text-align: center;
+  margin-bottom: 5px;
   height: 90px;
   width: 448px;
   background: url(../img/logo-back.png);
@@ -69,14 +72,9 @@ html, body {
   align-items: center;
   justify-content: center;
   height: 90px;
-  padding-left: 30px;
-}
-
-.intro > div .intro__logo span {
-  font-size: 54.56px;
-  display: inline-block;
-  margin-top: -15px;
-  color: white;
+  position: relative;
+  top: 10px;
+  left: 8px;
 }
 
 .intro > div .intro__logo div.intro__logo__owl-img {
@@ -84,22 +82,38 @@ html, body {
   height: 66px;
   width: 73px;
   display: inline-block;
+  position: relative;
+  top: -10px;
+  left: 5px;
+  margin-right: 10px;
+}
+
+.intro > div .intro__logo span {
+  font-size: 55px;
+  display: inline-block;
+  margin-top: -15px;
+  color: white;
+  font-family: Ris;
+  text-transform: uppercase;
 }
 
 .intro > div .intro__logo-sub span {
   color: white;
   font-size: 30.69px;
+  font-family: Ris;
+  letter-spacing: 4px;
 }
 
 .intro > div .intro__logo-sub span i {
   font-size: 8px;
   top: -6px;
   position: relative;
-  margin: 0px 5px;
+  margin: 0px 0px;
 }
 
 .intro > div .intro__be-owl {
-  margin-top: 35px;
+  margin-top: 40px;
+  margin-left: -15px;
 }
 
 .intro > div .intro__be-owl .intro_be-owl-text, .intro > div .intro__be-owl .intro__be-owl-sub {
@@ -124,12 +138,13 @@ html, body {
 .intro > div .intro__be-owl .intro__be-owl-sub {
   font-family: Ris;
   font-size: 36px;
+  margin-top: -30px;
 }
 
 .best-coffe {
   width: 100%;
   height: 100%;
-  background-image: url(../img/bag.png), url(../img/best-coffe.jpg);
+  background-image: url(../img/2/bag.png), url(../img/2/best-coffe.jpg);
   background-position: 80% 50%, top left;
   background-size: 20%, cover;
   background-repeat: no-repeat;

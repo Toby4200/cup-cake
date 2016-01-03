@@ -43,12 +43,15 @@ html, body {
 		align-items: center;
 		justify-content: center;
 
+
 		.intro__order {
-			margin-bottom: 70px;
+			margin-top: -75px;
+			margin-bottom: 60px;
 			span:nth-child(1) {
 				display: block;
 				font-size: 14px;
 				color: #f4f4f4;
+				line-height: 14px;
 				text-align: center;
 			}
 			span:nth-child(2) {
@@ -61,23 +64,23 @@ html, body {
 		.intro__logo {
 			display: inline-block;
 			text-align: center;
+			margin-bottom: 5px;
 
+			height: 90px;
+			width: 448px;
+			background: url(../img/logo-back.png);
 			>div {
 				display: flex;
 				align-items: center;
 				justify-content: center;
 				height: 90px;
-				padding-left: 30px;
+				//padding-left: 30px;
+				position: relative;
+				top: 10px;
+				left: 8px;
 			}
-			height: 90px;
-			width: 448px;
-			background: url(../img/logo-back.png);
-			span {
-				font-size: 54.56px;
-				display: inline-block;
-				margin-top: -15px;
-    			color: white;
-			}
+
+
 			div.intro__logo__owl-img {
 				background: url(../img/logo.png);
 				height: 66px;
@@ -86,7 +89,20 @@ html, body {
 				// background-size: cover;
 				// background-repeat: no-repeat;
 				//del
+				position: relative;
+				top:-10px;
+				left: 5px;
+				margin-right: 10px;
 			}
+			span {
+				font-size: 55px;
+				display: inline-block;
+				margin-top: -15px;
+    			color: white;
+				font-family: Ris;
+				text-transform: uppercase;
+			}
+
 			// span:nth-child(2) {
 			// 	font-size: 54.56px;
 			// }
@@ -96,17 +112,21 @@ html, body {
 			span {
 				color: white;
 				font-size: 30.69px;
+				font-family: Ris;
+				letter-spacing: 4px;
 				i{
 					font-size: 8px;
 				    top: -6px;
 				    position: relative;
-				    margin: 0px 5px;
+				    margin: 0px 0px;
 				}
 			}
 		}
 
 		.intro__be-owl {
-			margin-top: 35px;
+			margin-top: 40px;
+			margin-left:-15px;
+
 			.intro_be-owl-text, .intro__be-owl-sub {
 				display: block;
 			}
@@ -126,6 +146,7 @@ html, body {
 			.intro__be-owl-sub {
 				font-family: Ris;
 				font-size: 36px;
+				margin-top:-30px;
 				
 			}
 		}
