@@ -144,15 +144,16 @@ html, body {
 .best-coffe {
   width: 100%;
   height: 100%;
-  background-image: url(../img/2/bag.png), url(../img/2/best-coffe.jpg);
-  background-position: 80% 50%, top left;
-  background-size: 20%, cover;
+  background-image: url(../img/2/white-cup.png), url(../img/2/bag.png), url(../img/2/holy-spoon.png), url(../img/2/best-coffe.jpg);
+  background-position: 10% 55%,87% 75%, 20% 90%,  top left;
+  background-size: 250px,29%,10%, cover;
   background-repeat: no-repeat;
 }
 
 .best-coffe > .container {
   height: 100%;
   display: flex;
+  margin-top: -40px;
 }
 
 .best-coffe > .container .best-coffe__text {
@@ -165,12 +166,28 @@ html, body {
   margin-right: -4px;
 }
 
+.best-coffe > .container .best-coffe__text:before {
+  content: '';
+  height: 73px;
+  width: 100%;
+  background: url("../img/2/green-cup.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .best-coffe > .container .best-coffe__text .title {
   color: white;
   font-family: Ris;
   font-size: 60px;
   text-transform: uppercase;
   line-height: 1.3;
+  position: relative;
+}
+
+.best-coffe > .container .best-coffe__text .title img {
+  position: absolute;
+  top: -15px;
+  left: -20px;
 }
 
 .best-coffe > .container .best-coffe__text .sub {
@@ -179,4 +196,11 @@ html, body {
   font-size: 16px;
   text-align: center;
   line-height: 1.3;
+}
+
+@media screen and (min-width: 1200px) {
+  .best-coffe {
+    background-position: 10% 55%,87% 75%, 20% 90%,  top left;
+    background-size: 240px, 350px, 10%, cover;
+  }
 }
